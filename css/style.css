@@ -1,0 +1,3130 @@
+a{
+    text-decoration: none;
+    color: unset;
+    transition: 0.3s;
+}
+input,
+select,
+textarea{
+    box-shadow: none !important;
+    outline: none !important;
+}
+:root{
+    --main-color:#0D3558;
+}
+body{
+    direction: rtl;
+    font-family: 'Cairo', sans-serif;
+    overflow-x: hidden;
+}
+::selection{
+    background-color: var(--main-color);
+    color: white;
+}
+::-webkit-scrollbar{
+    background-color: var(--main-color);
+    width: 6px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: tomato;
+    border-radius: 5px;
+}
+/* start navigate */
+.navigate{
+    padding-top: 11px;
+    padding-bottom: 11px;
+    background-color: var(--main-color);
+    color: white;
+}
+.navigate .content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+} 
+.navigate .content .right img{
+    max-width: 108px;
+    height: 97px;
+    width: 100%;
+    object-fit: cover;
+}
+.navigate .content .left{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: center;
+}
+.navigate .content .left .mb-3{
+    margin-bottom: 0 !important;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    width: 455px;
+    height: 50px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 28px;
+    padding-left: 5px;
+}
+.navigate .content .left .mb-3 input.form-control{
+    border-top-right-radius: 28px;
+    border-bottom-right-radius: 28px;
+    border: none !important;
+    padding-right: 26px !important;
+    margin-left: 0 !important;
+    caret-color: tomato;
+    font-size: 18px;
+}
+.navigate .content .left .mb-3 input.form-control::placeholder{
+    font-size: 18px;
+    color: #B5B5B5;
+}
+.navigate .content .left .mb-3 .input-group-text{
+    border: none !important;
+    width: 42px;
+    height: 42px;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+    justify-content: center;
+    padding: 9px;
+}
+.navigate .content .left .mb-3 .input-group-text a:hover{
+    color: white;
+}
+.navigate .content .left .search{
+    width: 35px;
+    height: 35px;
+    border: 1px solid white;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 3px;
+    display: none;
+    margin-left: 12px;
+}
+.navigate .content .left .log{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+.navigate .content .left .log a{
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 0;
+    transition: 0.3s;
+}
+.navigate .content .left .notifi{
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+    align-items: center;
+}
+.navigate .content .left .notifi a{
+    position: relative;
+}
+.navigate .content .left .notifi i{
+    font-size: 28px;
+}
+.navigate .content .left .notifi .circle{
+    position: absolute;
+    top: -5px;
+    right: -8px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #FF6F31;
+    color: white;
+    text-align: center;
+}
+.navigate .content .left .notifi .circle p{
+    font-size: 16px;
+    font-weight: 600;
+    transform: translateY(-2px);
+    margin-bottom: 0;
+}
+.navigate .content .left .log a:first-child svg{
+    margin-left: 9px;
+}
+.navigate .content .left a:hover{
+    color: tomato;
+}
+.navigate .content .left .language a{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 9px;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+/* end navigate */
+/* start search  */
+#search{
+    display: none;
+    overflow: hidden;
+    background: var(--main-color);
+    /* margin-top: -1px; */
+}
+#search .mb-3{
+    margin-bottom: 0 !important;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    max-width: 600px;
+    width: 100%;
+    height: 65px;
+    background-color: var(--main-color);
+    border-radius: 0px;
+    padding-left: 5px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 26px !important;
+}
+#search .mb-3 input.form-control{
+    border: none !important;
+    margin-left: 0 !important;
+    caret-color: tomato;
+    font-size: 18px;
+}
+#search .mb-3 input.form-control::placeholder{
+    font-size: 18px;
+    color: #B5B5B5;
+}
+#search .mb-3 .input-group-text{
+    border: none !important;
+    width: 42px;
+    height: 42px;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+    justify-content: center;
+    padding: 9px;
+}
+#search .mb-3 .input-group-text a{
+    padding: 6px;
+    border: 1px solid;
+}
+#search .mb-3 .input-group-text a:hover{
+    color: tomato;
+}
+/* end search  */
+/* start header */
+.header {
+    position: relative;
+}
+.header .container-fluid{
+    padding: 0;
+}
+.header img{
+    width: 100%;
+}
+.header .sell{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgb(6 6 6 / 66%);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: white;
+    padding-top: 153px;
+}
+.header .sell h3{
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 34px;
+}
+.header .sell h3 + button{
+    width: 196px;
+    height: 57px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--main-color);
+    transition: 0.3s;
+}
+.header .sell h3 + button:hover{
+    background: linear-gradient(to right , black 0% ,  var(--main-color) 50%, black 100%);
+    color: white;
+}
+/* end header */
+/* start help */
+.help{
+    position: fixed;
+    right: 20px;
+    bottom: 26px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    z-index: 9999999999;
+}
+.help .top{
+    background: #FFFFFF;
+    width: 107px;
+    border-radius: 5px;
+    text-align: center;
+    padding-top: 7px;
+    padding-bottom: 10px;
+    position: relative;
+    display: none;
+}
+.help .top::after{
+    content: '';
+    position: absolute;
+    right: 36%;
+    bottom:-30px;
+    border-style: solid;
+    border-width: 15px;
+    border-color: white transparent transparent transparent;
+}
+.help .top small{
+    font-size: 16px;
+}
+.help .bottom{
+    width: 59px;
+    height: 59px;
+    border-radius: 50%;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    text-align: center;
+    padding-top: 13px;
+    cursor: pointer;
+}
+/* end help */
+/* start cars */
+.cars{
+    margin-top: 57px;
+    overflow: hidden;
+    padding-bottom: 76px;
+}
+.cars .content{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+.cars .content .right{
+    display: flex;
+    flex-direction: column;
+}
+.cars .content .right .top{
+    display: flex;
+    flex-direction: column;
+    width: 347px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 5px 6px #0000001A;
+    border-radius: 5px;
+    padding-bottom: 55px;
+}
+.cars .content .right .top .info{
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-right: 16px;
+    background-color: var(--main-color);
+    color: white;
+    border-radius: 5px 5px 0px 0px;
+    margin-bottom: 37px;
+}
+.cars .content .right .top .info h3{
+    display: flex;
+    flex-direction: row;
+    gap: 14px;
+    align-items: center;
+    font-size: 18px;
+    margin-bottom: 0;
+    font-weight: 600;
+}
+.cars .content .right .top .selec{
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+    padding-right: 16px;
+}
+.cars .content .right .top .selec label{
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--main-color);
+}
+.cars .content .right .top .selec select{
+    max-width: 314px;
+    height: 45px;
+    border: 1px solid #888888;
+    border-radius: 5px;
+    background-position: left 0.75rem center;
+    padding-right: 18px;
+    padding-left: 16px;
+    margin-bottom: 34px;
+}
+.cars .content .right .top .radio{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding-right: 16px;
+    margin-bottom: 34px;
+}
+.cars .content .right .top .radio h3{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 0;
+    color: var(--main-color);
+    height: 33px;
+}
+.cars .content .right .top .radio .con{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+}
+.cars .content .right .top .radio label{
+    font-size: 18px;
+    color: #585858;
+    font-weight: 600;
+    cursor: pointer;
+    user-select: none;
+}
+.cars .content .right .top .radio .choose{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+}
+.cars .content .right .top .price{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-right: 16px;
+}
+.cars .content .right .top .price h3{
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--main-color);
+    margin-bottom: 0;
+    height: 33px;
+}
+.cars .content .right .top .price .choose{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 48px;
+}
+.cars .content .right .top .price .choose .cont{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+.cars .content .right .top .price .choose .cont small{
+    height: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #343434;
+}
+.cars .content .right .top .price .choose .cont select{
+    border: 1px solid #888888;
+    border-radius: 5px;
+    width: 133px;
+    height: 49px;
+    background-position: left 0.75rem center;
+    padding-right: 20px;
+    padding-left: 0 !important;
+}
+.cars .content .right .bottom{
+    margin-top: 29px;
+    display: flex;
+    flex-direction: column;
+    gap: 31px;
+    width: 347px;
+}
+.cars .content .right .bottom .first{
+    text-align: center;
+    padding-top: 43px;
+    height: 222px;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    background-image: url("../images/header.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: rgb(34 34 34 / 22%);
+    z-index: 1;
+    color: white;
+    mix-blend-mode: darken;
+}
+.cars .content .right .bottom .first::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 81%);
+    z-index: -1;
+}
+.cars .content .right .bottom .first h3{
+    font-size: 18px;
+    font-weight: 600;
+    height: 33px;
+    margin-bottom: 15px;
+}
+.cars .content .right .bottom .first h6{
+    font-size: 16px;
+    height: 30px;
+    margin-bottom: 15px;
+}
+.cars .content .right .bottom .first button{
+    width: 165px;
+    height: 44px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #0000000F;
+    border-radius: 5px;
+    border: none;
+    color: var(--main-color);
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+    position: relative;
+    z-index: 2;
+    overflow:hidden ;
+}
+.cars .content .right .bottom .first button::after{
+    content: '';
+    position: absolute;
+    left: -100%;
+    bottom: 0;
+    z-index: -1;
+    background: linear-gradient(to left , var(--main-color) 0%, rgb(153, 153, 1) 100%);
+    height: 100%;
+    width: 100%;
+    transition: 0.5s;
+}
+.cars .content .right .bottom .first button:hover::after{
+    left: 0;
+}
+.cars .content .right .bottom .first button:hover{
+    color: white;
+}
+.cars .content .right .bottom .second{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 5px 6px #0000001A;
+    border-radius: 5px;
+    height: 273px;
+}
+.cars .content .right .bottom .second .owl-carousel{
+    width: 347px;
+}
+.cars .content .right .bottom .second .item{
+    display: flex;
+    flex-direction: column;
+    gap: 31px;
+    padding-right: 20px;
+    padding-left: 19px;
+    padding-top: 36px;
+    padding-bottom: 36px;
+}
+.cars .content .right .bottom .second .item .o{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.cars .content .right .bottom .second .item .o h3{
+    width: fit-content;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 0;
+    color: var(--main-color);
+}
+.cars .content .right .bottom .second .item .o i{
+    font-size: 30px;
+    color: rgb(13 53 88 / 70%);
+}
+.cars .content .right .bottom .second .item .t{
+    display: flex;
+    flex-direction: row;
+    gap: 9px;
+    align-items: baseline;
+}
+.cars .content .right .bottom .second .item .t .icon{
+    width: 60px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: var(--main-color);
+    color: #B5B5B5;
+    text-align: center;
+    padding-top: 4px;
+}
+.cars .content .right .bottom .second .item .t .icon i{
+    font-size: 20px;
+    width: 18px;
+    height: 21px;
+}
+.cars .content .right .bottom .second .item .t .text{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.cars .content .right .bottom .second .item .t .text h4{
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 0;
+    color: #343434;
+    height: 30px;
+}
+.cars .content .right .bottom .second .item .t .text p{
+    font-size: 16px;
+    color: #585858;
+    margin-bottom: 0;
+}
+.cars .content .right .bottom .second .owl-carousel .owl-dots{
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+.cars .content .right .bottom .second .owl-carousel .owl-dots button {
+    width: 30px;
+    height: 7px;
+    margin-right: 10px;
+}
+.cars .content .right .bottom .second .owl-carousel .owl-dots button span{
+    width: 30px;
+    height: 7px;
+    border-radius: 25px;
+    background-color: #585858cc;
+}
+.cars .content .right .bottom .second .owl-carousel .owl-dots button.owl-dot.active span{
+    background-color: var(--main-color);
+}
+.cars .content .left{
+    width: 100%;
+    background-color: white;
+    filter: drop-shadow(0px 5px 6px #0000001a);
+    padding-bottom: 40px;
+    border-radius: 5px;
+}
+.cars .content .left .cont{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 33px;
+    padding-right: 24px;
+    padding-left: 32px;
+    padding-bottom: 28px;
+    width: 100%;
+    border-bottom: 1px solid #DBDBDB;
+}
+.cars .content .left .last{
+    padding-bottom: 0;
+    border-bottom:none !important;
+}
+.cars .content .left .cont .once{
+    display: flex;
+    flex-direction: row;
+    gap: 23px;
+    width: fit-content;
+}
+.cars .content .left .cont .once .image{
+    width: 195px;
+    height: 159px;
+}
+.cars .content .left .cont .once .image img{
+    width: 100%;
+    object-fit: cover;
+}
+.cars .content .left .cont .once .infor{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.cars .content .left .cont .once .infor h3{
+    font-size: 22px;
+    color: #343434;
+    margin-bottom: 3px;
+}
+.cars .content .left .cont .once .infor .user{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 9px;
+    color: #585858;
+    margin-bottom: 7px;
+}
+.cars .content .left .cont .once .infor .user h5{
+    font-size: 16px;
+    color: #585858;
+    margin-bottom: 0;
+}
+.cars .content .left .cont .once .infor .user i{
+    font-size: 20px;
+}
+.cars .content .left .cont .once .infor .locate{
+    display: flex;
+    flex-direction: row;
+    gap: 13px;
+    align-items: center;
+    margin-bottom: 8px;
+}
+.cars .content .left .cont .once .infor .locate i{
+    font-size: 20px;
+    color: #585858;
+}
+.cars .content .left .cont .once .infor .locate h5{
+    margin-bottom: 0;
+    color: #585858;
+    font-size: 16px;
+}
+.cars .content .left .cont .once .infor .time{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    color: #585858;
+}
+.cars .content .left .cont .once .infor .time i{
+    font-size: 20px;
+}
+.cars .content .left .cont .once .infor .time small{
+    font-size: 16px;
+    font-weight: 600;
+}
+.cars .content .left .cont .twth{
+    text-align: end;
+    display: flex;
+    flex-direction: column;
+} 
+.cars .content .left .cont .twth .timer,
+.cars .content .left .cont .twth .price,
+.cars .content .left .cont .twth .wat{
+    text-align: start;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+.cars .content .left .cont .twth .timer i,
+.cars .content .left .cont .twth .price i,
+.cars .content .left .cont .twth .wat i{
+    font-size: 20px;
+}
+.cars .content .left .cont .twth .timer{
+    gap: 13px;
+    width: 130px;
+    height: 40px;
+    background: #F5F5F5 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    text-align: center;
+    justify-content: center;
+    padding-top: 8px;
+    color: #4D94D3;
+    margin-bottom: 17px;
+}
+.cars .content .left .cont .twth .timer p{
+    margin-bottom: 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+.cars .content .left .cont .twth .price{
+    gap: 12px;
+    color: #888888;
+    margin-bottom: 18px;
+}
+.cars .content .left .cont .twth .price p{
+    font-size: 16px;
+    margin-bottom: 0;
+}
+.cars .content .left .cont .twth .price p span{
+    font-size: 18px;
+    font-weight: 600;
+    color: #00883B;
+    margin-left: 5px;
+}
+.cars .content .left .cont .twth .wat{
+    gap: 10px;
+    color: #888888;
+}
+.cars .content .left .cont .twth .wat h6{
+    margin-bottom: 0;
+    font-size: 16px;
+}
+.cars .content .left .cont .twth .wat h6 span{
+    font-size: 18px;
+    font-weight: 600;
+    color: #585858;
+}
+.cars .content .left .pagination{
+    margin-top: 48px;
+}
+.cars .content .left .pagination ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 6px;
+    padding: 0;
+    padding-right: 26px;
+    margin-bottom: 0;
+}
+.cars .content .left .pagination ul li{
+    width: 35px;
+    height: 35px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #0D3558;
+    border-radius: 5px;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    transition: 0.3s;
+    padding-top: 5px;
+}
+.cars .content .left .pagination ul li a{
+    font-size: 16px;
+    font-weight: 600;
+    color: #0D3558;
+    padding: 8px 12px;
+}
+.cars .content .left .pagination ul li:last-child a{
+    padding: 0;
+}
+.cars .content .left .pagination ul li:hover{
+    background-color: var(--main-color);
+}
+.cars .content .left .pagination ul li:hover a{
+    color: white;
+}
+.cars .content .left .pagination ul li:first-child{
+    background-color: var(--main-color);
+}
+.cars .content .left .pagination ul li:first-child a{
+    color: white;
+}
+/* end cars */
+/* start ad */
+.ad{
+    overflow: hidden;
+    margin-bottom: 89px;
+}
+.owl-carousel{
+    display: block !important;
+}
+.ad .item{
+    text-align: center;
+    padding-top: 90px;
+    position: relative;
+    z-index: 1;
+    height: 180px;
+    overflow: hidden;
+}
+.ad .item h3{
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 0;
+    color: white;
+}
+.ad  img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    z-index: -2;
+}
+.ad .item::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 180px;
+    background-color: rgb(0 0 0 / 73%);
+    z-index: -1;
+}
+.ad .owl-carousel .owl-dots{
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+.ad .owl-carousel .owl-dots button {
+    width: 30px;
+    height: 7px;
+    margin-right: 10px;
+}
+.ad .owl-carousel .owl-dots button span{
+    width: 30px;
+    height: 7px;
+    border-radius: 25px;
+    background-color: #585858cc;
+}
+.ad .owl-carousel .owl-dots button.owl-dot.active span{
+    background-color: var(--main-color);
+}
+/* end ad */
+/* start proud */
+.proud{
+    margin-bottom: 22px;
+}
+.proud img{
+    filter: grayscale(1);
+    transition: 0.3s;
+    cursor: pointer;
+}
+.proud img:hover{
+    filter: grayscale(0);
+}
+/* end proud */
+/* start footer */
+.footer{
+    padding-top: 45px;
+    padding-bottom: 41px;
+    background-color: var(--main-color);
+    color: white;
+}
+.footer .content{
+    display: flex;
+    flex-direction: row;
+    gap: 154px;
+}
+.footer .content .cont h3{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 18px;
+    height: 33px;
+}
+.footer .content .cont ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.footer .content .cont ul li{
+    position: relative;
+    padding-bottom: 5px;
+    width: fit-content;
+    overflow: hidden;
+}
+.footer .content .cont ul li a{
+    font-size: 16px;
+}
+.footer .content .cont ul li:hover a{
+    color: tomato;
+}
+.footer .content .cont ul li::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    width: 100%;
+    height: 1px;
+    background-color: tomato;
+    transition: 0.3s;
+}
+.footer .content .cont ul li:hover::before{
+    left: 0;
+}
+.footer .content .cont button{
+    width: 362px;
+    height: 73px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    border: none;
+    font-size: 22px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 21px;
+    justify-content: center;
+    margin-bottom: 26px;
+    color:var(--main-color);
+    transition: 0.3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+}
+.footer .content .cont button::after{
+    content: '';
+    position: absolute;
+    left: 100%;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: darkcyan;
+    transition: 0.3s;
+}
+.footer .content .cont button:hover::after{
+    left: 0px;
+}
+.footer .content .cont button:hover{
+    color: white;
+}
+.footer .content .cont button i{
+    font-size: 30px;
+    position: relative;
+}
+.footer .content .cont .social{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+}
+.footer .content .cont .social .icon{
+    width: 41px;
+    height: 38px;
+    background: #0D3558 0% 0% no-repeat padding-box;
+    border: 1px solid #B3B3B3;
+    border-radius: 5px;
+    text-align: center;
+}
+.footer .content .cont .social .icon i{
+    font-size: 25px;
+    padding: 6px;
+}
+.footer .content .cont .social a:hover{
+    color: white;
+}
+.footer .content .cont .social a:hover .icon{
+    background-color: tomato;
+    color: white;
+}
+/* end footer */
+/* start rights */
+.rights{
+    background-color: var(--main-color);
+    padding-bottom: 35px;
+}
+.rights .content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.rights .content .right .social{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+}
+.rights .content .right .social .icon{
+    width: 41px;
+    height: 38px;
+    background: #0D3558 0% 0% no-repeat padding-box;
+    border: 1px solid #B3B3B3;
+    border-radius: 5px;
+    text-align: center;
+}
+.rights .content .right .social .icon i{
+    font-size: 25px;
+    padding: 6px;
+    color: white;
+}
+.rights .content .right .social a:hover{
+    color: white;
+}
+.rights .content .right .social a:hover .icon{
+    background-color: tomato;
+    color: white;
+}
+.rights .content .left img{
+    width: 140px;
+    height: 43px;
+    object-fit: cover;
+}
+/* end rights */
+/* start arbon-sign */
+.arbon-sign .body{
+    background-color: #F8F8F8;
+}
+.arbon-sign  .navigate .content{
+    align-items: center;
+    gap: 30px;
+}
+.arbon-sign  .navigate .content .mb-3{
+    margin-bottom: 0 !important;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    width: 455px;
+    height: 50px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 28px;
+    padding-left: 5px;
+}
+.arbon-sign  .navigate .content .mb-3 input.form-control{
+    border-top-right-radius: 28px;
+    border-bottom-right-radius: 28px;
+    border: none !important;
+    padding-right: 26px !important;
+    margin-left: 0 !important;
+    caret-color: tomato;
+    font-size: 18px;
+}
+.arbon-sign  .navigate .content .mb-3 input.form-control::placeholder{
+    font-size: 18px;
+    color: #B5B5B5;
+}
+.arbon-sign  .navigate .content .mb-3 .input-group-text{
+    border: none !important;
+    width: 42px;
+    height: 42px;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+    justify-content: center;
+    padding: 9px;
+}
+.arbon-sign  .navigate .content .mb-3 .input-group-text a:hover{
+    color: white;
+}
+.arbon-sign .format{
+    max-width: 673px;
+    height: 513px;
+    width: 100%;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 12px;
+    padding-top: 26px;
+    padding-bottom: 34px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 69px;
+    margin-bottom: 94px;
+    padding-right: 84px;
+    padding-left: 84px;
+}
+.arbon-sign .format h2{
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 24px;
+    color: var(--main-color);
+    text-align: center;
+}
+.arbon-sign .format h2 + .mb-3{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 31px !important;
+    width: 506px;
+}
+.arbon-sign .format  label{
+    font-size: 18px;
+    color: #888888;
+    margin-bottom: 0;
+}
+.arbon-sign .format  h2 + .mb-3 input{
+    width: 100%;
+    height: 45px;
+    border: 1px solid #B5B5B5;
+    padding-right: 23px;
+    caret-color: tomato;
+    border-radius: 5px;
+}
+.arbon-sign .format .input-group{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 506px;
+}
+.arbon-sign .format .input-group .inpu{
+    display: flex;
+    flex-direction: row-reverse;
+    border: 1px solid #B5B5B5;
+    border-radius: 5px;
+    border-top-left-radius: 5px !important;
+    border-bottom-left-radius: 5px !important;
+    margin-left: 0 !important;
+    width: 100%;
+    height: 45px;
+    margin-bottom: 24px;
+}
+.arbon-sign .format .input-group .inpu input{
+    border: none;
+    padding-right: 23px;
+    caret-color: tomato;
+}
+.arbon-sign .format input::placeholder{
+    font-size: 16px;
+    color: #B5B5B5;
+}
+.arbon-sign .format .input-group .inpu span{
+    background-color: transparent;
+    border: none;
+}
+.arbon-sign .format .link{
+    display: flex;
+    flex-direction: column;
+}
+.arbon-sign .format .link a{
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--main-color);
+}
+.arbon-sign .format .link a:first-child:hover{
+    color:tomato;
+    border-bottom: tomato 2px solid !important;
+}
+.arbon-sign .format .link a:first-child{
+    margin-bottom: 27px;
+    border-bottom: 2px solid var(--main-color);
+    width: fit-content;
+    margin-right: auto;
+}
+.arbon-sign .format .link button{
+    width: 506px;
+    height: 55px;
+    background: #0D3558 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    border: none;
+    margin-bottom: 18px;
+    transition: 0.3s;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+}
+.arbon-sign .format .link button::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 50%;
+    height: 100%;
+    background-color: tomato;
+    z-index: -1;
+    transition: 0.3s;
+}
+.arbon-sign .format .link button:hover::after{
+    top:0;
+}
+.arbon-sign .format .link button::before{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 100%;
+    width: 50%;
+    height: 100%;
+    background-color: tomato;
+    z-index: -1;
+    transition: 0.3s;
+}
+.arbon-sign .format .link button:hover::before{
+    bottom:0;
+}
+.arbon-sign .format .link button + a{
+    text-align: center;
+}
+/* end arbon-sign */
+/* start arbon-new */
+.arbon-new{
+    background-color: #F8F8F8;
+}
+.arbon-new  .navigate .content{
+    align-items: center;
+    gap: 30px;
+}
+.arbon-new  .navigate .content .mb-3{
+    margin-bottom: 0 !important;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    width: 455px;
+    height: 50px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 28px;
+    padding-left: 5px;
+}
+.arbon-new  .navigate .content .mb-3 input.form-control{
+    border-top-right-radius: 28px;
+    border-bottom-right-radius: 28px;
+    border: none !important;
+    padding-right: 26px !important;
+    margin-left: 0 !important;
+    caret-color: tomato;
+    font-size: 18px;
+}
+.arbon-new  .navigate .content .mb-3 input.form-control::placeholder{
+    font-size: 18px;
+    color: #B5B5B5;
+}
+.arbon-new  .navigate .content .mb-3 .input-group-text{
+    border: none !important;
+    width: 42px;
+    height: 42px;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+    justify-content: center;
+    padding: 9px;
+}
+.arbon-new  .navigate .content.mb-3 .input-group-text a:hover{
+    color: white;
+}
+.arbon-new .formm{
+    margin-top: 89px;
+    padding-top: 29px;
+    padding-right: 84px;
+    padding-left: 83px;
+    padding-bottom: 38px;
+    max-width: 673px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 12px;
+    margin-bottom: 138px;
+}
+.arbon-new .formm h1{
+    font-size: 23px;
+    font-weight: bold;
+    margin-bottom: 31px;
+    text-align: center;
+    color: var(--main-color);
+}
+.arbon-new .formm .mb-3{
+    margin-bottom: 31px !important;
+    max-width: 506px;
+}
+.arbon-new .formm .mb-3 label{
+    font-size: 18px;
+    color: #888888;
+    margin-bottom: 10px;
+}
+.arbon-new .formm .mb-3 input{
+    height: 45px;
+    width: 100%;
+    border: 1px solid #B5B5B5;
+    border-radius: 5px;
+    caret-color: tomato;
+    padding-right: 21px;
+}
+.arbon-new .formm .mb-3 input::placeholder{
+    font-size: 16px;
+    color: #B5B5B5;
+}
+.arbon-new .formm  .input-group{
+    display: flex;
+    flex-direction: column;
+}
+.arbon-new .formm  .input-group .inpu{
+    display: flex;
+    flex-direction: row-reverse ;
+    gap: 8px;
+}
+.arbon-new .formm  .input-group.inpu select{
+    width: 112px;
+    height: 45px;
+    border: 1px solid #B5B5B5;
+    border-radius: 5px;
+    padding: 0;
+    padding-right: 19px;
+    background-position: right 4px center;
+    background-size: 11px 11px;
+    color: #585858;
+}
+.arbon-new .formm  .input-group .pho{
+    width: 112px;
+    height: 45px;
+    border-radius: 5px;
+    border: 1px solid #B5B5B5;
+    background-color: transparent;
+    padding: 0;
+    padding-right: 32px;
+}
+.arbon-new .formm  .input-group ul{
+    list-style: none;
+    padding: 0;
+    position: relative;
+    z-index: 999;
+    background-color: white;
+    margin: 0;
+    border: 1px solid #b5b5b5;
+    width: 112px;
+    border-radius: 5px;
+    text-align: center;
+    border-top: 0;
+}
+.arbon-new .formm  .input-group ul li{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 6px;
+    padding-top: 10px;
+    padding-left: 6px;
+    margin-bottom: 5px;
+    height: 38px;
+}
+.arbon-new .formm  .input-group ul li img{
+    width: 29px;
+    height: 20px;
+    object-fit: cover;
+}
+.arbon-new .formm  .selec{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 31px;
+}
+.arbon-new .formm  .selec label{
+    font-size: 18px;
+    color: #888888;
+    margin-bottom: 0;
+}
+.arbon-new .formm  .selec .form-select{
+    background-position: left 0.75rem center;
+    padding-right: 21px;
+    color: #B5B5B5;
+    max-width: 506px;
+    height: 45px;
+    width: 100%;
+    border: 1px solid #B5B5B5;
+    border-radius: 5px;
+}
+.arbon-new .formm .input-group .pass{
+    display: flex;
+    flex-direction: row-reverse;
+    max-width: 506px;
+    width: 100%;
+    border: 1px solid #B5B5B5;
+    border-radius: 5px !important;
+    height: 48px;
+}
+.arbon-new .formm .input-group .pass input{
+    border: none;
+    padding-right: 21px;
+    margin-bottom: 5px;
+}
+.arbon-new .formm .input-group .pass span{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.arbon-new .formm .input-group .pass + p{
+    font-size: 14px;
+    color:#B5B5B5;
+    margin-bottom: 0;
+}
+.arbon-new .formm .check{
+    display: flex;
+    flex-direction: row;
+    align-items: self-start;
+    gap: 15px;
+    margin-bottom: 34px;
+}
+.arbon-new .formm .check input{
+    width: 25px;
+    height: 25px;
+}
+.arbon-new .formm .check label{
+    font-size: 16px;
+    color: #585858;
+    font-weight: 600;
+    margin-bottom: 0;
+    user-select: none;
+}
+.arbon-new .formm .check label a{
+    color: #20629B;
+    border-bottom: 1px solid;
+}
+.arbon-new .formm .check label a:hover{
+    color: tomato;
+}
+.arbon-new .formm .check + .button button{
+    max-width: 506px;
+    height: 55px;
+    width: 100%;
+    background: #0D3558 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    color: #FFFFFF;
+    margin-bottom: 22px;
+    transition: 0.3s;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+}
+.arbon-new .formm .check + .button button::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 50%;
+    height: 100%;
+    background-color: tomato;
+    z-index: -1;
+    transition: 0.3s;
+}
+.arbon-new .formm .check + .button button:hover::after{
+    top:0;
+}
+.arbon-new .formm .check + .button button::before{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 100%;
+    width: 50%;
+    height: 100%;
+    background-color: tomato;
+    z-index: -1;
+    transition: 0.3s;
+}
+.arbon-new .formm .check + .button button:hover::before{
+    bottom:0;
+}
+.arbon-new .formm  .logg{
+    text-align: center;
+}
+.arbon-new .formm  .logg a{
+    font-size: 16px;
+    color: var(--main-color);
+    font-weight: 700;
+    margin-right: auto;
+    margin-left: auto;
+}
+.arbon-new .formm  .logg a:hover{
+    color: tomato;
+}
+/* end arbon-new */
+/* start arbon-contact */
+.ar  .content{
+    align-items: center;
+    gap: 30px;
+}
+.ar .content .mb-3{
+    margin-bottom: 0 !important;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    width: 455px;
+    height: 50px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 28px;
+    padding-left: 5px;
+}
+.ar .content .mb-3 input.form-control{
+    border-top-right-radius: 28px;
+    border-bottom-right-radius: 28px;
+    border: none !important;
+    padding-right: 26px !important;
+    margin-left: 0 !important;
+    caret-color: tomato;
+    font-size: 18px;
+}
+.ar  .content .mb-3 input.form-control::placeholder{
+    font-size: 18px;
+    color: #B5B5B5;
+}
+.ar  .content .mb-3 .input-group-text{
+    border: none !important;
+    width: 42px;
+    height: 42px;
+    background-color: var(--main-color);
+    border-radius: 50% !important;
+    text-align: center;
+    color: white;
+    justify-content: center;
+    padding: 9px;
+}
+.ar  .content .mb-3 .input-group-text a:hover{
+    color: white;
+}
+.arbon-contact h1{
+    text-align: center;
+    margin-top: 45px;
+    margin-bottom: 27px;
+    font-size: 22px;
+    font-weight: 700;
+}
+.arbon-contact .applec{
+    max-width: 608px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 5px 13px #00000029;
+    border-radius: 8px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 38px;
+    padding-right: 51px;
+    padding-left: 51px;
+    padding-bottom: 46px;
+    margin-bottom: 97px;
+}
+.arbon-contact .applec .mb-3{
+    margin-bottom: 32px !important;
+}
+.arbon-contact .applec .mb-3{
+    margin-bottom: 31px !important;
+    max-width: 506px;
+}
+.arbon-contact .applec .mb-3 label{
+    font-size: 18px;
+    color: #888888;
+    margin-bottom: 10px;
+}
+.arbon-contact .applec .mb-3 input{
+    height: 45px;
+    width: 100%;
+    border: 1px solid #B5B5B5;
+    border-radius: 5px;
+    caret-color: tomato;
+    padding-right: 21px;
+}
+.arbon-contact .applec .mb-3 input::placeholder{
+    font-size: 16px;
+    color: #B5B5B5;
+}
+.arbon-contact .applec .input-group{
+    display: flex;
+    flex-direction: column;
+}
+.arbon-contact .applec .input-group .inpu{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 8px;
+    margin-left: 0 !important;
+}
+.arbon-contact .applec  .input-group .pho{
+    width: 112px;
+    height: 45px;
+    border-radius: 5px;
+    border: 1px solid #B5B5B5;
+    background-color: transparent;
+    padding: 0;
+    padding-right: 32px;
+}
+.arbon-contact .applec textarea{
+    max-width: 506px;
+    height: 114px;
+    width: 100%;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #B5B5B5;
+    border-radius: 5px;
+    padding-right: 21px;
+    caret-color: tomato;
+    padding-top: 8px;
+}
+.arbon-contact .applec textarea::placeholder{
+    font-size: 16px;
+    color: #B5B5B5;
+}
+.arbon-contact .applec .button{
+    max-width: 506px;
+    height: 45px;
+}
+.arbon-contact .applec  .button button{
+    height: 45px;
+    width: 100%;
+    border:none;
+    background: #0D3558 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+}
+/* end arbon-contact */
+/* start arbon-vech */
+.arbon-vech{
+    background-color: #F8F8F8;
+}
+.arbon-vech .vech .content{
+    display: flex;
+    flex-direction: row;
+    gap: 33px;
+    margin-top: 35px;
+    margin-bottom: 87px;
+}
+.arbon-vech .content .car{
+    padding: 29px 21px 123px 29px;
+    width: 100%;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000021;
+    border-radius: 5px;
+}
+.arbon-vech .content .car h1{
+    font-size: 22px;
+    font-weight: 600;
+    color: #343434;
+    margin-bottom: 14px;
+}
+.arbon-vech .content .car h1 + .info{
+    display: flex;
+    flex-direction: row;
+    gap: 54px;
+    align-items: center;
+    color: #888888;
+    margin-bottom: 42px;
+}
+.arbon-vech .content .car .info .cont{
+    display: flex;
+    flex-direction: row;
+    gap: 9px;
+    align-items: center;
+}
+.arbon-vech .content .car .info .cont i{
+    font-size: 20px;
+}
+.arbon-vech .content .car .info .cont h6{
+    margin-bottom: 0;
+    font-size: 16px;
+}
+.arbon-vech .content .car .owl-carousel{
+    max-width:800px;
+    height: 415px;
+    width: 100%;
+    margin-bottom: 50px;
+    position: relative;
+}
+.arbon-vech .content .car .owl-carousel .item{
+    max-width: 800px;
+    height: 415px;
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.arbon-vech .content .car .owl-carousel .item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.arbon-vech .content .car .owl-carousel .owl-dots{
+    position: absolute;
+    bottom: 23px;
+    right: 44%;
+}
+.arbon-vech .content .car .owl-theme .owl-dots .owl-dot span{
+    background: #ffffff80 !important;
+    width: 12px;
+    height: 12px;
+}
+.arbon-vech .content .car .owl-theme .owl-dots .owl-dot.active span{
+    background: #ffffff !important;
+}
+.arbon-vech .content .car .owl-nav{
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 17px;
+    padding-left: 17px;
+}
+.arbon-vech .content .car button.owl-prev{
+    width: 49px;
+    line-height: 0.1;
+    height: 49px;
+    border-radius: 50%;
+    background-color: rgb(255 255 255 / 74%);
+}
+.arbon-vech .content .car button.owl-prev span{
+    font-size: 38px;
+}
+.arbon-vech .content .car button.owl-next{
+    width: 49px;
+    line-height: 0.1;
+    height: 49px;
+    border-radius: 50%;
+    background-color: rgb(255 255 255 / 74%);
+}
+.arbon-vech .content .car button.owl-next span{
+    font-size: 38px;
+}
+/* .arbon-vech .content .car .owl-carousel::after{
+    content: '';
+    position: absolute;
+    bottom: -25px;
+    left: -29px;
+    width: 108%;
+    height: 1px;
+    background-color: #E3E3E3;
+} */
+.arbon-vech .content .car h3{
+    font-size: 20px;
+    font-weight: 600;
+    color: #343434;
+    margin-bottom: 16px;
+}
+.arbon-vech .content .car h3 + p{
+    max-width: 602px;
+    height: 121px;
+    font-size: 16px;
+    margin-bottom: 25px;
+    overflow: hidden;
+    line-height: 1.8;
+}
+.arbon-vech .content .car  .conten{
+    max-width: 582px;
+    height: 282px;
+    width: 100%;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #B5B5B5;
+    border-radius: 5px;
+    padding-top: 19px;
+    padding-right: 14px;
+}
+.arbon-vech .content .car  .conten p{
+    max-width: 544px;
+    height: 92px;
+    width: 100%;
+    overflow: hidden;
+    line-height: 1.8;
+    color: #343434;
+    margin-bottom: 12px;
+    padding-left: 20px;
+}
+.arbon-vech .content .car  .conten .images{
+    display: flex;
+    flex-direction: row;
+    gap: 9px;
+    align-items: center;
+}
+.arbon-vech .content .car  .conten .images .image{
+    max-width: 171px;
+    height: 128px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.arbon-vech .content .car  .conten .images .image img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+.arbon-vech .content .car  .conten .images .image:hover .icon{
+    display: block;
+}
+.arbon-vech .content .car  .conten .images .image .icon{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgb(0 0 0 / 59%);
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    padding-top: 53px;
+    display: none;
+    cursor: pointer;
+}
+.arbon-vech .content .sec{
+    display: flex;
+    flex-direction: column;
+    gap: 63px;
+}
+.arbon-vech .content .sec .top{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000021;
+    border-radius: 5px;
+    padding-top: 25px;
+    padding-right: 25px;
+    padding-bottom: 31px;
+    min-width: 343px;
+}
+.arbon-vech .content .sec .top .cont{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #585858;
+}
+.arbon-vech .content .sec .top .cont i{
+    font-size: 25px;
+}
+.arbon-vech .content .sec .top .cont h4{
+    margin-bottom: 0;
+    font-size: 24px;
+    font-weight: 600;
+}
+.arbon-vech .content .sec .top .tim{
+    color: #4D94D3;
+    width: 198px;
+    height: 63px;
+    background: #F5F5F5 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    justify-content: center;
+    margin-bottom: 24px;
+    gap: 18px;
+}
+.arbon-vech .content .sec .top .pr{
+    gap: 21px;
+    margin-bottom: 26px;
+}
+.arbon-vech .content .sec .top .pr  i{
+    font-size: 20px;
+}
+.arbon-vech .content .sec .top .pr h4,
+.arbon-vech .content .sec .top .us h4{
+    font-size: 18px;
+    font-weight: initial;
+}
+.arbon-vech .content .sec .top .pr h4 span{
+    font-size: 20px;
+    font-weight: 600;
+    color: #00883B;
+}
+.arbon-vech .content .sec .top .us{
+    gap: 10px;
+    margin-bottom: 26px;
+}
+.arbon-vech .content .sec .top .us h4 span{
+    font-size: 20px;
+    font-weight: 600;
+}
+.arbon-vech .content .sec .top .us + h6{
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+.arbon-vech .content .sec .top input{
+    width: 272px;
+    height: 45px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #CACACA;
+    border-radius: 5px;
+    padding-right: 16px;
+    margin-bottom: 6px;
+}
+.arbon-vech .content .sec .top .button  button{
+    width: 120px;
+    height: 45px;
+    background: #17A12E 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 23px;
+}
+.arbon-vech .content .sec .top .warn{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 6px;
+    color: #707070;
+    margin-bottom: 24px;
+}
+.arbon-vech .content .sec .top .warn  i{
+    font-size: 19px;
+}
+.arbon-vech .content .sec .top .warn p{
+    font-size: 16px;
+    margin-bottom: 0;
+    max-width: 274px;
+}
+.arbon-vech .content .sec .top .warn + button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 9px;
+    width: 192px;
+    height: 45px;
+    justify-content: center;
+    background: #0D3558 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    color: white;
+}
+.arbon-vech .content .sec .ads h2{
+    font-size: 22px;
+    color: #707070;
+    font-weight: 600;
+    margin-bottom: 37px;
+}
+.arbon-vech .content .sec .ads a .cont{
+    display: flex;
+    flex-direction: row;
+    gap: 19px;
+    align-items: flex-start;
+}
+.arbon-vech .content .sec .ads a .cont .image{
+    max-width: 182px;
+    height: 141px;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+.arbon-vech .content .sec .ads a .cont .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.arbon-vech .content .sec .ads a .cont .image .sear{
+    position: absolute;
+    left: 0;
+    top: 0;
+    text-align: center;
+    background-color: rgb(0 0 0 / 64%);
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding-top: 53px;
+    display: none;
+}
+.arbon-vech .content .sec .ads a .cont  .info{
+    display: flex;
+    flex-direction: column;
+}
+.arbon-vech .content .sec .ads a .cont  .info h5{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #343434;
+}
+.arbon-vech .content .sec .ads a .cont  .info .cont{
+    display: flex;
+    flex-direction: row;
+    gap: 9px;
+    align-items: center;
+    color: #585858;
+    margin-bottom: 20px;
+}
+.arbon-vech .content .sec .ads a .cont  .info .cont i{
+    font-size: 20px;
+}
+.arbon-vech .content .sec .ads a .cont  .info .cont h6{
+    white-space: nowrap;
+    font-size: 16px;
+    margin-bottom: 0;
+}
+.arbon-vech .content .sec .ads a + hr{
+    margin-top: 22.5px;
+    margin-bottom: 22.5px;
+}
+/* end arbon-vech */
+/* start arbon-ads */
+.arbon-ads{
+    background-color: #F8F8F8;
+}
+.arbon-ads .tabs{
+    margin-top: 34px;
+    margin-bottom: 67px;
+}
+.arbon-ads .tabs .content{
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+}
+.arbon-ads .tabs .content .right{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #0000001C;
+    border-radius: 5px;
+    height: fit-content;
+    padding-bottom: 125px;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 360px;
+    height: 437px;
+}
+.arbon-ads .tabs .content .right .tabb{
+    color: #585858;
+    width: 100%;
+    height: 59px;
+    cursor: pointer;
+    position: relative;
+}
+.arbon-ads .tabs .content .right .tabb .num{
+    position: absolute;
+    top: 15px;
+    left: 14px;
+    width: 22px;
+    height: 22px;
+    color: white;
+    border-radius: 50%;
+    background-color: #FF6F31;
+    text-align: center;
+}
+.arbon-ads .tabs .content .right .tabb .num h5{
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+.arbon-ads .tabs .content .right .tabb h3{
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 11px;
+    padding-right: 26px;
+    padding-top: 15px;
+}
+.arbon-ads .tabs .content .right .tabb i{
+    font-size: 20px;
+}
+.arbon-ads .tabs .content .left{
+    width: 100%;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #0000001C;
+    border-radius: 5px;
+    min-height: 437px;
+    height: fit-content;
+}
+.arbon-ads .tabs .content .left .adds .con{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 30px;
+    padding-right: 45px;
+    gap: 30px;
+    padding-left: 60px;
+    width: 100%;
+    padding-bottom: 39px;
+}
+.arbon-ads .tabs .content .left .adds .con .onn{
+    display: flex;
+    flex-direction: row;
+    gap: 26px;
+}
+.arbon-ads .tabs .content .left .adds .con .onn .image{
+    max-width: 184px;
+    border-radius: 5px;
+    height: 136px;
+}
+.arbon-ads .tabs .content .left .adds .con .onn .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.arbon-ads .tabs .content .left .adds .con .onn  .inf{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-between;
+    color: #343434;
+}
+.arbon-ads .tabs .content .left .adds .con .onn  .inf h3{
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+.arbon-ads .tabs .content .left .adds .con .onn  .inf .time{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+.arbon-ads .tabs .content .left .adds .con .onn  .inf .time i{
+    font-size: 18px;
+}
+.arbon-ads .tabs .content .left .adds .con .onn  .inf .time p{
+    margin-bottom: 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+.arbon-ads .tabs .content .left .adds .con .onn  .inf .butt{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    align-items: center;
+}
+.arbon-ads .tabs .content .left .adds .con .onn  .inf .butt button{
+    width: 143px;
+    height: 41px;
+    background: #17A12E 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    transition: 0.3s;
+}
+.arbon-ads .tabs .content .left .adds .con .onn  .inf .butt button:hover{
+    background-color: #888888;
+    color: white;
+}
+.arbon-ads .tabs .content .left .adds .con .onn  .inf .butt a{
+    font-size: 24px;
+    color: #888888;
+}
+.arbon-ads .tabs .content .left .adds .con .onn  .inf .butt a:hover{
+    color: tomato;
+}
+.arbon-ads .tabs .content .left .adds .con .twt{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.arbon-ads .tabs .content .left .adds .con .twt .cont{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.arbon-ads .tabs .content .left .adds .con .twt .timer {
+    gap: 12px;
+    background-color: #F5F5F5;
+    width: 130px;
+    height: 40px;
+    border-radius: 5px;
+    justify-content: center;
+    color: #4D94D3;
+}
+.arbon-ads .tabs .content .left .adds .con .twt i{
+    font-size: 20px;
+}
+.arbon-ads .tabs .content .left .adds .con .twt .timer p{
+    margin-bottom: 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+.arbon-ads .tabs .content .left .adds .con .twt .price {
+    gap: 12px;
+    color: #585858;
+}
+.arbon-ads .tabs .content .left .adds .con .twt .price  p{
+    margin-bottom: 0;
+    font-size: 16px;
+    color: #888888;
+}
+.arbon-ads .tabs .content .left .adds .con .twt .price  p span{
+    font-size: 18px;
+    font-weight: 600;
+    color: #00883B;
+}
+.arbon-ads .tabs .content .left .adds .con .twt .wat {
+    gap: 10px;
+    color: #585858;
+}
+.arbon-ads .tabs .content .left .adds .con .twt .wat  h6{
+    margin-bottom: 0;
+    font-size: 16px;
+}
+.arbon-ads .tabs .content .left .adds .con .twt .wat  h6 span{
+    font-size: 18px;
+    font-weight: 600;
+}
+.arbon-ads .tabs .content .left .adds .con + hr{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: #D6D6D6;
+}
+.arbon-ads .tabs .content .left .messages .cont{
+    padding: 33px 29px 24px 29px;
+    display: flex;
+    flex-direction: row;
+    gap: 14px;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+    position: relative;
+}
+.arbon-ads .tabs .content .left .messages .cont:hover{
+    background-color: #FAFAFA;
+}
+.arbon-ads .tabs .content .left .messages .cont .str{
+    display: flex;
+    flex-direction: column;
+}
+.arbon-ads .tabs .content .left .messages .cont .str .numb{
+    position: absolute;
+    left: 29px;
+    top: 34px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #FF6F31;
+    text-align: center;
+    color: white;
+    padding-top: 2px;
+}
+.arbon-ads .tabs .content .left .messages .cont .str .numb p{
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 600;
+}
+.arbon-ads .tabs .content .left .messages .cont .str h3{
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--main-color);
+}
+.arbon-ads .tabs .content .left .messages .cont .str h3 + p {
+    font-size: 14px;
+    font-weight: 600;
+    color: #888888;
+    margin-bottom: 0;
+}
+.arbon-ads .tabs .content .left .messd{
+    background-color: #FAFAFA;
+    padding-top: 12px;
+    padding-right: 41px;
+    padding-bottom: 33px;
+    max-height: 437px;
+    height: 100%;
+    position: relative;
+}
+.arbon-ads .tabs .content .left .messd .first{
+    text-align: end;
+    margin-left: 29px;
+    cursor: pointer;
+}
+.arbon-ads .tabs .content .left .messd .first h5{
+    font-size: 14px;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+    justify-content: end;
+    color: #888888;
+}
+.arbon-ads .tabs .content .left .messd .first h5 span{
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background-color: var(--main-color);
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+}
+.arbon-ads .tabs .content .left .messd .first h5 span i{
+    font-size: 20px;
+}
+.arbon-ads .tabs .content .left .messd .second{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: baseline;
+    margin-left: 41px;
+}
+.arbon-ads .tabs .content .left .messd .second .one{
+    width: 30px;
+    height: 30px;
+}
+.arbon-ads .tabs .content .left .messd .second .one img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.arbon-ads .tabs .content .left .messd .second .two {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 35px;
+}
+.arbon-ads .tabs .content .left .messd .second .two h3{
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 0;
+    color: var(--main-color);
+}
+.arbon-ads .tabs .content .left .messd .second .two h3 + h6{
+    width: 344px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000017;
+    border-radius: 8px 0px 8px 8px;
+    padding-top: 19px;
+    padding-bottom: 19px;
+    padding-right: 15px;
+    padding-left: 25px;
+    font-size: 14px;
+    color: #888888;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+.arbon-ads .tabs .content .left .messd .third{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 8px;
+    align-items: baseline;
+    justify-content: end;
+    margin-left: 41px;
+}
+.arbon-ads .tabs .content .left .messd .third .one{
+    width: 30px;
+    height: 30px;
+}
+.arbon-ads .tabs .content .left .messd .third .one img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.arbon-ads .tabs .content .left .messd  .third  .two{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 100px;
+}
+.arbon-ads .tabs .content .left .messd  .third h3{
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 0;
+    color: var(--main-color);
+    text-align: end;
+}
+.arbon-ads .tabs .content .left .messd .third h3 + h6{
+    width: 344px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000017;
+    border-radius: 0px 8px 8px 8px;
+    padding-top: 19px;
+    padding-bottom: 19px;
+    padding-right: 15px;
+    padding-left: 25px;
+    font-size: 14px;
+    color: #888888;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+.arbon-ads .tabs .content .left .messd .input{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 14px;
+    align-items: center;
+    padding-left: 41px;
+}
+.arbon-ads .tabs .content .left .messd .input input{
+    width: 100%;
+    height: 42px;
+    border: 1px solid #B5B5B5;
+    border-radius: 5px;
+    padding-right: 20px;
+}
+.arbon-ads .tabs .content .left .messd .input button{
+    width: 128px;
+    height: 42px;
+    background: #0D3558 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    justify-content: center;
+}
+.arbon-ads .tabs .content .left .notifi .cont{
+    padding: 33px 29px 24px 29px;
+    display: flex;
+    flex-direction: row;
+    gap: 14px;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+    position: relative;
+}
+.arbon-ads .tabs .content .left .notifi .cont:hover{
+    background-color: #FAFAFA;
+}
+.arbon-ads .tabs .content .left .notifi .cont .str{
+    display: flex;
+    flex-direction: column;
+}
+.arbon-ads .tabs .content .left .notifi .cont .str .numb{
+    position: absolute;
+    left: 29px;
+    top: 33px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #FF6F31;
+    text-align: center;
+    color: white;
+    padding-top: 2px;
+}
+.arbon-ads .tabs .content .left .notifi .cont .str .numb p{
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 600;
+}
+.arbon-ads .tabs .content .left .notifi .cont .str h3{
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--main-color);
+}
+.arbon-ads .tabs .content .left .notifi .cont .str h3 + p {
+    font-size: 14px;
+    font-weight: 600;
+    color: #888888;
+    margin-bottom: 0;
+}
+.arbon-ads .tabs .content .left .sold .con{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 30px;
+    padding-right: 45px;
+    gap: 30px;
+    padding-left: 60px;
+    width: 100%;
+    padding-bottom: 39px;
+}
+.arbon-ads .tabs .content .left .sold .con .onn{
+    display: flex;
+    flex-direction: row;
+    gap: 26px;
+}
+.arbon-ads .tabs .content .left .sold .con .onn .image{
+    max-width: 184px;
+    border-radius: 5px;
+    height: 136px;
+}
+.arbon-ads .tabs .content .left .sold .con .onn .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.arbon-ads .tabs .content .left .sold .con .onn  .inf{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-between;
+    color: #343434;
+}
+.arbon-ads .tabs .content .left .sold .con .onn  .inf h3{
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+.arbon-ads .tabs .content .left .sold .con .onn  .inf .time{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+.arbon-ads .tabs .content .left .sold .con .onn  .inf .time i{
+    font-size: 18px;
+}
+.arbon-ads .tabs .content .left .sold .con .onn  .inf .time p{
+    margin-bottom: 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+.arbon-ads .tabs .content .left .sold .con .onn  .inf .butt{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    align-items: center;
+}
+.arbon-ads .tabs .content .left .sold .con .onn  .inf .butt button{
+    width: 143px;
+    height: 41px;
+    background: #0D3558 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    transition: 0.3s;
+}
+.arbon-ads .tabs .content .left .sold .con .onn  .inf .butt button:hover{
+    background-color: white;
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+}
+.arbon-ads .tabs .content .left .sold .con .onn  .inf .butt a{
+    font-size: 24px;
+    color: #888888;
+}
+.arbon-ads .tabs .content .left .sold .con .onn  .inf .butt a:hover{
+    color: tomato;
+}
+.arbon-ads .tabs .content .left .sold .con .twt{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.arbon-ads .tabs .content .left .sold .con .twt .cont{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.arbon-ads .tabs .content .left .sold .con .twt .timer {
+    gap: 12px;
+    background-color: #F5F5F5;
+    width: 130px;
+    height: 40px;
+    border-radius: 5px;
+    justify-content: center;
+    color: #4D94D3;
+}
+.arbon-ads .tabs .content .left .sold .con .twt i{
+    font-size: 20px;
+}
+.arbon-ads .tabs .content .left .sold .con .twt .timer p{
+    margin-bottom: 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+.arbon-ads .tabs .content .left .sold .con .twt .price {
+    gap: 12px;
+    color: #585858;
+}
+.arbon-ads .tabs .content .left .sold .con .twt .price  p{
+    margin-bottom: 0;
+    font-size: 16px;
+    color: #888888;
+}
+.arbon-ads .tabs .content .left .sold .con .twt .price  p span{
+    font-size: 18px;
+    font-weight: 600;
+    color: #00883B;
+}
+.arbon-ads .tabs .content .left .sold .con .twt .wat {
+    gap: 10px;
+    color: #585858;
+}
+.arbon-ads .tabs .content .left .sold .con .twt .wat  h6{
+    margin-bottom: 0;
+    font-size: 16px;
+}
+.arbon-ads .tabs .content .left .sold .con .twt .wat  h6 span{
+    font-size: 18px;
+    font-weight: 600;
+}
+.arbon-ads .tabs .content .left .sold .con + hr{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: #D6D6D6;
+}
+.arbon-ads .tabs .content .left .adds,
+.arbon-ads .tabs .content .left .messages ,
+.arbon-ads .tabs .content .left .messd ,
+.arbon-ads .tabs .content .left .notifi ,
+.arbon-ads .tabs .content .left .sold,
+.arbon-ads .tabs .content .left .inform{
+    height: 100%;
+}
+.arbon-ads .tabs .content .left .inform {
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    /* box-shadow: 0px 3px 6px #0000001C;
+    border-radius: 5px; */
+    overflow: hidden;
+}
+.arbon-ads .tabs .content .left .inform  .tob{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 21px;
+}
+.arbon-ads .tabs .content .left .inform  .tob .con{
+    width: 151px;
+    height: 56px;
+    text-align: center;
+    padding-top: 20px;
+    color: #888888;
+    transition: 0.3s;
+    cursor: pointer;
+    user-select: none;
+}
+.arbon-ads .tabs .content .left .inform  .tob .con:hover{
+    background-color: var(--main-color);
+    color: white;
+}
+.arbon-ads .tabs .content .left .inform  .tob .con:first-child{
+    background-color: var(--main-color);
+    color: white;
+}
+.arbon-ads .tabs .content .left .inform  .tob .con h3{
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+.arbon-ads .tabs .content .left .inform  .pottom .turn .conten{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    padding-right: 23px;
+}
+.arbon-ads .tabs .content .left .inform  .pottom .turn .conten h4{
+    font-size: 18px;
+    margin-bottom: 2px;
+    color: #343434;
+}
+.arbon-ads .tabs .content .left .inform  .pottom .turn .conten h4 + p{
+    font-size: 16px;
+    color: #888888;
+    margin-bottom: 0;
+}
+.arbon-ads .tabs .content .left .inform  .pottom .turn .conten + hr{
+    margin-top: 17px;
+    margin-bottom: 17px;
+    background-color: #D6D6D6;
+}
+.arbon-ads .tabs .content .left .inform  .pottom .cad .cont{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 23px;
+    padding-left: 38px;
+    margin-top: 22px;
+}
+.arbon-ads .tabs .content .left .inform  .pottom .cad  .cont .one{
+    display: flex;
+    flex-direction: row;
+    gap: 9px;
+    align-items: baseline;
+}
+.arbon-ads .tabs .content .left .inform  .pottom .cad  .cont .one i{
+    font-size: 18px;
+    color: var(--main-color);
+}
+.arbon-ads .tabs .content .left .inform  .pottom .cad  .cont .one  .inff{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.arbon-ads .tabs .content .left .inform  .pottom .cad  .cont .one  .inff h3{
+    font-size: 16px;
+    font-weight: 600;
+    color: #585858;
+    margin-bottom: 0;
+}
+.arbon-ads .tabs .content .left .inform  .pottom .cad  .cont .one  .inff h3 + p{
+    font-size: 14px;
+    margin-bottom: 0;
+    color: #888888;
+}
+.arbon-ads .tabs .content .left .inform  .pottom .cad  .cont .two{
+    flex-direction: row;
+    align-items: center;
+    gap: 27px;
+    display: none;
+}
+.arbon-ads .tabs .content .left .inform  .pottom .cad  .cont .two a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 9px;
+    color: #585858;
+}
+.arbon-ads .tabs .content .left .inform  .pottom .cad  .cont .two a i{
+    font-size: 20px;
+}
+.arbon-ads .tabs .content .left .inform  .pottom .cad  .cont .two a  h6{
+    margin-bottom: 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+.arbon-ads .tabs .content .left .inform  .pottom .cad  .cont + hr{
+    margin-top: 13px;
+    margin-bottom: 13px;
+    background-color: #888888;
+}
+.arbon-ads .tabs .content .left .inform  .pottom .cad  .cont .two a:first-child:hover{
+    color: #4d94d3;
+}
+.arbon-ads .tabs .content .left .inform  .pottom .cad  .cont .two a:last-child:hover{
+    color: tomato;
+}
+
+.arbon-ads .tabs .content .left .inform  .pottom .acco .cont{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 23px;
+    padding-left: 38px;
+    margin-top: 22px;
+}
+.arbon-ads .tabs .content .left .inform  .pottom .acco .cont .one{
+    display: flex;
+    flex-direction: row;
+    gap: 9px;
+    align-items: baseline;
+}
+.arbon-ads .tabs .content .left .inform  .pottom .acco .cont .one i{
+    font-size: 18px;
+    color: var(--main-color);
+}
+.arbon-ads .tabs .content .left .inform  .pottom .acco .cont .one  .inff{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.arbon-ads .tabs .content .left .inform  .pottom .acco .cont .one  .inff h3{
+    font-size: 16px;
+    font-weight: 600;
+    color: #585858;
+    margin-bottom: 0;
+}
+.arbon-ads .tabs .content .left .inform  .pottom .acco .cont .one  .inff h3 + p{
+    font-size: 14px;
+    margin-bottom: 0;
+    color: #888888;
+}
+.arbon-ads .tabs .content .left .inform  .pottom .acco .cont .two{
+    flex-direction: row;
+    align-items: center;
+    gap: 27px;
+    display: none;
+}
+.arbon-ads .tabs .content .left .inform  .pottom .acco .cont .two a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 9px;
+    color: #585858;
+}
+.arbon-ads .tabs .content .left .inform  .pottom .acco .cont .two a i{
+    font-size: 20px;
+}
+.arbon-ads .tabs .content .left .inform  .pottom .acco .cont .two a  h6{
+    margin-bottom: 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+.arbon-ads .tabs .content .left .inform  .pottom .acco .cont + hr{
+    margin-top: 13px;
+    margin-bottom: 13px;
+    background-color: #888888;
+}
+.arbon-ads .tabs .content .left .inform  .pottom .acco .cont .two a:first-child:hover{
+    color: #4d94d3;
+}
+.arbon-ads .tabs .content .left .inform  .pottom .acco .cont .two a:last-child:hover{
+    color: tomato;
+}
+.arbon-ads .tabs .content .left .inform  .pottom .cad ,
+.arbon-ads .tabs .content .left .inform  .pottom .acco {
+    display: none;
+}
+.arbon-ads .tabs .content .left .user-inf{
+    background-color: white;
+    box-shadow: 0px 3px 6px #0000001C;
+    border-radius: 5px;
+    padding: 41px 52px;
+}
+.arbon-ads .tabs .content .left .user-inf .mb-3{
+    margin-bottom: 31px !important;
+    max-width: 506px;
+}
+.arbon-ads .tabs .content .left .user-inf .mb-3 label{
+    font-size: 18px;
+    color: #888888;
+    margin-bottom: 10px;
+}
+.arbon-ads .tabs .content .left .user-inf .mb-3 input{
+    height: 45px;
+    width: 100%;
+    border: 1px solid #B5B5B5;
+    border-radius: 5px;
+    caret-color: tomato;
+    padding-right: 21px;
+}
+.arbon-ads .tabs .content .left .user-inf .mb-3 input::placeholder{
+    font-size: 16px;
+    color: #B5B5B5;
+}
+.arbon-ads .tabs .content .left .user-inf  .input-group{
+    display: flex;
+    flex-direction: column;
+}
+.arbon-ads .tabs .content .left .user-inf  .input-group .inpu{
+    display: flex;
+    flex-direction: row-reverse ;
+    gap: 8px;
+    height: 46px;
+    overflow: hidden;
+}
+.arbon-ads .tabs .content .left .user-inf  .input-group.inpu select{
+    width: 112px;
+    height: 45px;
+    border: 1px solid #B5B5B5;
+    border-radius: 5px;
+    padding: 0;
+    padding-right: 19px;
+    background-position: right 4px center;
+    background-size: 11px 11px;
+    color: #585858;
+}
+.arbon-ads .tabs .content .left .user-inf  .input-group .pho{
+    width: 112px;
+    height: 45px;
+    border-radius: 5px;
+    border: 1px solid #B5B5B5;
+    background-color: transparent;
+    padding: 0;
+    padding-right: 32px;
+}
+.arbon-ads .tabs .content .left .user-inf  .input-group ul{
+    list-style: none;
+    padding: 0;
+    position: relative;
+    z-index: 999;
+    background-color: white;
+    margin: 0;
+    border: 1px solid #b5b5b5;
+    width: 112px;
+    border-radius: 5px;
+    text-align: center;
+    border-top: 0;
+}
+.arbon-ads .tabs .content .left .user-inf  .input-group ul li{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 6px;
+    padding-top: 10px;
+    padding-left: 6px;
+    margin-bottom: 5px;
+    height: 38px;
+}
+.arbon-ads .tabs .content .left .user-inf  .input-group ul li img{
+    width: 29px;
+    height: 20px;
+    object-fit: cover;
+}
+.arbon-ads .tabs .content .left .user-inf  .selec{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 31px;
+}
+.arbon-ads .tabs .content .left .user-inf .selec label{
+    font-size: 18px;
+    color: #888888;
+    margin-bottom: 0;
+}
+.arbon-ads .tabs .content .left .user-inf  .selec .form-select{
+    background-position: left 0.75rem center;
+    padding-right: 21px;
+    color: #B5B5B5;
+    max-width: 506px;
+    height: 45px;
+    width: 100%;
+    border: 1px solid #B5B5B5;
+    border-radius: 5px;
+}
+.arbon-ads .tabs .content .left .user-inf button{
+    display: block;
+    max-width: 506px;
+    height: 55px;
+    width: 100%;
+    background: #0D3558 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    margin-bottom: 20px;
+}
+.arbon-ads .tabs .content .left .user-inf button + .link{
+    text-align: center;
+    max-width: 506px;
+}
+.arbon-ads .tabs .content .left .user-inf button + .link a{
+    font-size: 16px;
+    font-weight: 700;
+    color: #585858;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+}
+.arbon-ads .tabs .content .left .messages ,
+.arbon-ads .tabs .content .left .messd ,
+.arbon-ads .tabs .content .left .notifi ,
+.arbon-ads .tabs .content .left .sold ,
+.arbon-ads .tabs .content .left .inform, 
+.arbon-ads .tabs .content .left .user-inf {
+    display: none;
+}
+/* end arbon-ads */
+/* start arbon-about */
+.arbon-about{
+    background-color: #F8F8F8;
+}
+.arbon-about .about{
+    margin-top: 45px;
+    margin-bottom: 121px;
+    text-align: center;
+}
+.arbon-about .about h3{
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+.arbon-about .about h3 + p {
+    font-size: 16px;
+    color: #707070;
+    margin-bottom: 72px;
+    max-width: 736px;
+    height: 145px;
+    overflow: hidden;
+    line-height: 1.8;
+    margin-right: auto;
+    margin-left: auto;
+}
+.arbon-about .about  .services{
+    display: flex;
+    flex-direction: column;
+    gap: 39px;
+}
+.arbon-about .about  .services h4{
+    margin-bottom: 0;
+    font-size: 22px;
+    font-weight: 600;
+    color: #000000;
+}
+.arbon-about .about  .services .content{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: space-evenly;
+}
+.arbon-about .about  .services .content .cont{
+    width: 249px;
+    height: 213px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 8px;
+    padding-top: 26px;
+    text-align: center;
+    user-select: none;
+}
+.arbon-about .about  .services .content .cont .image{
+    width: 102px;
+    height: 102px;
+    border-radius: 50%;
+    background: #0D355887 0% 0% no-repeat padding-box;
+    margin-right: auto;
+    margin-left: auto;
+    line-height: 6;
+    margin-bottom: 18px;
+    transition: 0.3s;
+}
+.arbon-about .about  .services .content .cont:hover .image{
+    transform: rotate(360deg);
+}
+.arbon-about .about  .services .content .cont:hover h6{
+    color: tomato;
+}
+.arbon-about .about  .services .content .cont  h6{
+    margin-bottom: 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--main-color);
+    transition: 0.3s;
+}
+/* end arbon-about */
+/* start arbon-part */
+.arbon-part{
+    background-color: #F8F8F8;
+}
+.arbon-part .part{
+    margin-top: 45px;
+    margin-bottom: 161px;
+    text-align: center;
+}
+.arbon-part .part h2{
+    font-size: 22px;
+    color: #000000;
+    margin-bottom: 24px;
+    font-weight: 600;
+}
+.arbon-part .part h2 + p{
+    max-width: 736px;
+    height: 30px;
+    line-height: 1.8;
+    overflow: hidden;
+    font-size: 16px;
+    color: #707070;
+    margin-bottom: 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+.arbon-part .part .content{
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    justify-content: space-evenly;
+    margin-top: 51px;
+}
+.arbon-part .part .content .one{
+    display: flex;
+    flex-direction: row;
+    gap: 28px;
+    justify-content: center;
+}
+.arbon-part .part .content .cont{
+    width: 200px;
+    height: 171px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 5px 13px #00000029;
+    border-radius: 8px;
+    padding-top: 60px;
+}
+/* end arbon-part */
+/* start arbon-sell */
+.arbon-sell{
+    background-color: #F8F8F8;
+}
+.arbon-sell .sell{
+    margin-top: 43px;
+    margin-bottom: 143px;
+}
+.arbon-sell .sell h1{
+    margin-top: 43px;
+    margin-bottom: 41px;
+    font-size: 22px;
+    font-weight: 700;
+    color:var(--main-color) ;
+    text-align: center;
+}
+.arbon-sell .sell .cont h3{
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--main-color);
+    padding-bottom: 10px;
+    position: relative;
+    margin-bottom: 38px;
+}
+.arbon-sell .sell .cont h3::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 50px;
+    height: 3px;
+    background-color: var(--main-color);
+}
+.arbon-sell .sell .cont h3 + ul{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 0;
+    margin-bottom: 0;
+}
+.arbon-sell .sell .cont .o{
+    margin-bottom: 45px;
+}
+.arbon-sell .sell .cont h3 + ul:first-child{
+    margin-bottom: 45px;
+}
+.arbon-sell .sell .cont h3 + ul li{
+    max-width: 703px;
+    /* height: 33px; */
+    line-height: 1.8;
+    font-size: 16px;
+    color: #707070;
+    justify-content: start;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 15px;
+}
+.arbon-sell .sell .cont h3 + ul li .marker{
+    width:20px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #888888;
+}
+/* end arbon-sell */

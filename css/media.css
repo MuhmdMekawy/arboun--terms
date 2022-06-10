@@ -1,0 +1,281 @@
+@media (max-width:1400px){
+    .arbon-vech .vech .content{
+        flex-wrap: wrap;
+    }
+    .arbon-vech .content .sec{
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+}
+@media (max-width:1200px){
+    .navigate .content .left{
+        gap: 15px;
+    }
+    .header .sell{
+        padding-top: 90px;
+    }
+    .header img{
+        height: 300px;
+        object-fit: cover;
+    }
+}
+@media (max-width:990px){
+    .navigate .content .left .mb-3{
+        display: none;
+    }
+    .navigate .content .search{
+        display: inline-block !important;
+    }
+    .arbon-sign  .navigate .content .search,
+    .arbon-new  .navigate .content .search{
+        display: none !important;
+    }
+    .cars .content{
+        flex-wrap: wrap;
+    }
+    .cars .content .right{
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: start;
+    }
+    .cars .content .right .top{
+        padding-bottom: initial;
+    }
+    .cars .content .right .top .info{
+        margin-bottom: 16px;
+    }
+    .cars .content .right .bottom{
+        margin-top: 0;
+    }
+    .footer .content{
+        gap: 40px;
+    }
+    .arbon-new .formm{
+        margin-bottom: 100px;
+    }
+    .arbon-ads .tabs .content .left .adds .con{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .arbon-ads .tabs .content .left{
+        min-height: 437px;
+        height: fit-content;
+    }
+    .arbon-ads .tabs .content .left .adds .con .onn{
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        gap: 15px;
+    }
+    .arbon-ads .tabs .content .left .adds .con .onn .inf .time{
+        justify-content: center;
+    }
+    .arbon-ads .tabs .content .left .adds .con .onn .inf .butt{
+        gap: 13px;
+    }
+    .arbon-ads .tabs .content .left .sold .con{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .arbon-ads .tabs .content .left .user-inf{
+        padding: 25px;
+    }
+    .arbon-part .part .content .one{
+        gap: 10px;
+    }
+    .arbon-part .part{
+        margin-bottom: 70px;
+    }
+    .arbon-sell .sell{
+        margin-bottom: 70px;
+    }
+}
+@media (max-width:770px){
+    .header .sell h3{
+        font-size: 23px;
+        margin-bottom: 20px;
+    }
+    .header .sell h3 + button{
+        width: 150px;
+    }
+    .cars .content .right .top{
+        padding-bottom: 40px;
+    }
+    .cars .content .left .cont .once{
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .help{
+        right: 15px;
+        bottom: 15px;
+    }
+    .footer .content .cont button{
+        max-width: 380px;
+        width: 100%;
+        font-size: 16px;
+        gap: 10px;
+    }
+    .footer .content .cont:last-child{
+        display: flex;
+        flex-direction: column;
+        gap: 26px;
+        justify-content: start;
+    }
+    .footer .content .cont:last-child button{
+        margin: 0;
+    }
+    .arbon-sign .format{
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+    .arbon-new .formm{
+        margin-bottom: 70px;
+    }
+    .arbon-ads .tabs .content{
+        flex-wrap: wrap;
+    }
+    .footer .content .cont ul li a{
+        font-size: 14px;
+    }
+    .arbon-about .about .services .content{
+        gap: 7px;
+    }
+    .arbon-about .about{
+        margin-bottom: 45px;
+    }
+    .ad{
+        margin-bottom: 45px;
+    }
+    .arbon-part .part{
+        margin-bottom: 45px;
+    }
+    .arbon-part .part .content .one{
+        flex-wrap: wrap;
+    }
+}
+@media (max-width:580px){
+    .navigate .content{
+        flex-direction: column;
+        justify-content: center;
+        gap: 25px;
+        text-align: center;
+    }
+    .navigate .content .left{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .cars .content .left .cont .once{
+        justify-content: center;
+    }
+    .cars .content .left .cont{
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+    }
+    .cars .content .right .bottom .second .owl-carousel,
+    .cars .content .right .top,
+    .cars .content .right .bottom .first,
+    .cars .content .right .bottom .second{
+        max-width: 298px;
+        width: 100%;
+        overflow: hidden;
+    }
+    .cars .content .right .top .selec{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .cars .content .right .top .selec select{
+        width: 280px;
+    }
+    .cars .content .right .top .price .choose{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 25px;
+    }
+    .footer .content{
+        flex-wrap: wrap;
+    }
+    .footer .content .cont:last-child{
+        flex-direction: column-reverse;
+    }
+    .rights .content{
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .arbon-sign .format{
+        margin-bottom: 60px;
+    }
+    .arbon-sign .navigate .content .mb-3 {
+        max-width: 350px;
+        width: 100%;
+    }
+    .arbon-sign .format .mb-3,
+    .arbon-sign .format h2 + .mb-3,
+    .arbon-sign .format .link button,
+    .arbon-new .navigate .content .mb-3{
+        max-width: 560px;
+        width: 100%;
+    }
+    .arbon-sign .format{
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .arbon-new .formm{
+        padding-right: 25px;
+        padding-left: 25px;
+    }
+    .arbon-contact .applec{
+        padding-right: 25px;
+        padding-left: 25px;
+    }
+    .arbon-vech .content .car h1 + .info{
+        gap:20px;
+        flex-wrap: wrap;
+    }
+    .arbon-vech .content .sec .top{
+        min-width: 0px;
+    }
+    .arbon-ads .tabs .content{
+        flex-wrap: wrap;
+    }
+    .arbon-ads .tabs .content .right{
+        width: 262px;
+    }
+    .arbon-ads .tabs .content .left .messd .second .two h3 + h6,
+    .arbon-ads .tabs .content .left .messd .third h3 + h6{
+        max-width: 344px;
+        width: 100%;
+        white-space: break-spaces;
+        line-height: 1.8;
+    }
+    .arbon-ads .tabs .content .left .messd{
+        padding-right: 25px;
+    }
+    .arbon-ads .tabs .content .left .messd .second ,
+    .arbon-ads .tabs .content .left .messd .third{
+        margin-left: 25px;
+    }
+    .arbon-ads .tabs .content .left .messd .second .one{
+        width: 45px;
+    }
+    .arbon-ads .tabs .content .left .sold .con .onn{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .navigate .content .left .notifi{
+        gap: 30px;
+    }
+    .arbon-about .about .services .content{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+    .arbon-sell .sell{
+        margin-bottom: 45px;
+    }
+    .arbon-sell .sell .cont h3 + ul li{
+        font-size: 14px;
+    }
+}
